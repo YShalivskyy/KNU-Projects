@@ -2,7 +2,7 @@ package com.ys.tasks.Applet7;
 
 import java.awt.*;
 
-public class Ball
+class Ball
 {
     double x,y;            // location
     double z;              // radius
@@ -39,12 +39,7 @@ public class Ball
         c = new Color(r, g, b);
     }
 
-    //  This updates a ball according to the physical universe.
-    //  The reason I exempt a ball from gravity during a hit is
-    //  to simulate "at rest" equilibrium when the ball is resting
-    //  on the floor or on another ball.
-
-    public void update(Animator a) {
+    public void update(AnimationHandler a) {
         x += vx;
         if (x+z > a.xsize) {
             if (vx > 0) vx *= a.r;          // restitution
@@ -57,6 +52,7 @@ public class Ball
             if (vx < 0) vx *= a.r;
             vx = Math.abs(vx) + vmin;
             hit = true;
+            System.out.println();
             if (x + z < 0) x = -z;
         }
         y += vy;
@@ -85,7 +81,7 @@ public class Ball
     //  or gravitational force.
     //  Returns TRUE if ball mainWindow should be deleted.
 
-    public boolean interact(Ball b, Animator a)
+    public boolean collisionInteract(Ball b, AnimationHandler a)
     {
         double p = b.x - x;
         double q = b.y - y;
@@ -95,9 +91,8 @@ public class Ball
         {
             hit = b.hit = true;
             if (h > 1e-10) {
-                //  Compute the elastic collision of two balls.
-                //  The math involved here is not for the faint of heart!
 
+                //  Compute the elastic collision of two balls.
                 double v1, v2, r1, r2, s, t, v;
                 p /= h;
                 q /= h;              // normalized impact direction

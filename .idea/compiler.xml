@@ -19,8 +19,8 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="ProgrammingTasks2016_main" target="1.7" />
-      <module name="ProgrammingTasks2016_test" target="1.7" />
+      <module name="ProgrammingTasks2016_main" target="1.8" />
+      <module name="ProgrammingTasks2016_test" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

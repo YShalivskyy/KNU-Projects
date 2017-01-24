@@ -2,62 +2,67 @@ package com.ys.tasks.Applet7;
 
 import java.awt.*;
 
-public class MainWindow extends Frame
+class MainWindow extends Frame
 {
-    private Animator anim;		//object that draws on canvas
-    private Thread anim_thread;	//thread running Animator
+
+    private AnimationHandler animationHandler;	//object that draws on canvas
+    private Thread animationThread;	//thread running AnimationHandler
     private boolean is_applet;
+
+    public AnimationHandler getAnimationHandler() {
+        return animationHandler;
+    }
 
     //  This method creates layout and main objects.
     MainWindow(String title, boolean isapp) {
         super(title);
         is_applet = isapp;
         Panel p = new Panel();      // control panel
-        Label n = new Label("Balls applet");
+
+        Label label = new Label("Applet App");
+        label.setFont(new Font("TimesRoman",Font.BOLD,18));
+        p.add(label);
+
         p.setLayout(new GridLayout(0,1));   // vertical layout
-        p.setFont(new Font("Helvetica",Font.PLAIN,10));
-        n.setFont(new Font("TimesRoman",Font.BOLD,16));
-        p.add(n);
-        p.add(new Button("add"));
-        p.add(new Button("delete ball"));
-        p.add(new Button("quit"));
-        anim = new Animator(p);
-        setLayout(new BorderLayout(2,2));
-        add("Center",anim);
-        add("West",p);
+
+        p.setFont(new Font("TimesRoman",Font.PLAIN,12));
+
+        p.add(new Button("Span Ball"));
+        p.add(new Button("Exit"));
+        animationHandler = new AnimationHandler(p);
+        setLayout(new BorderLayout(4,4));
+        add("Center", animationHandler);
+        add("East",p);
     }
 
-    public void start() {
-        if (anim_thread==null) {
-            anim_thread = new Thread(anim);
-            anim_thread.start();        // start new thread
+    public void startThreads() {
+        if (animationThread ==null) {
+            animationThread = new Thread(animationHandler);
+            animationThread.start();        // startThreads new thread
         }
     }
 
-    public void stop() {
-        if (anim_thread!=null) {
+    public void terminateThreads() {
+        if (animationThread !=null) {
             try {
-                anim_thread.join(100);
+                animationThread.join(100);
             } catch (InterruptedException e) {}
-            anim_thread = null;
+            animationThread = null;
         }
     }
 
     public boolean action(Event e, Object arg) {
         if (e.target instanceof Button) {
             switch ((String)arg) {
-                case "delete ball":
-                    anim.delBall();
-                    break;
-                case "quit":
-                    stop();
+                case "Exit":
+                    terminateThreads();
                     hide();
                     removeAll();
                     dispose();
                     if (!is_applet) System.exit(0);
                     break;
-                case "add":
-                    anim.addBall(new Ball(Math.random() * 10 + 5));
+                case "Span Ball":
+                    animationHandler.spanBall(new Ball(Math.random() * 10 + 7));
                     break;
             }
         }

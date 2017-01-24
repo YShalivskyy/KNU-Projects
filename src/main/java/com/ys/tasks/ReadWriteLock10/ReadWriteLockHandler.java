@@ -49,17 +49,18 @@ class ThreadSafeArrayList<E>  {
     private final ReadersWriterLock rwl = new ReadersWriterLock();
     private ArrayList<E> list = new ArrayList<>();
 
-    public void set(E el) throws InterruptedException {
+    public int set(E el) throws InterruptedException {
         rwl.writeLock();
         try {
             list.add(el);
             System.out.println("Adding element by thread" + Thread.currentThread().getName());
         } finally {
             rwl.writeUnlock();
+            return 1;
         }
     }
 
-    public E get(int index) throws InterruptedException {
+    public E get(int index, int counter) throws InterruptedException {
         rwl.readLock();
         try {
             System.out.println("Printing elements by thread"+Thread.currentThread().getName());
@@ -71,34 +72,39 @@ class ThreadSafeArrayList<E>  {
 }
 
 public class ReadWriteLockHandler {
-
+    public static int readCounter;
+    public static int writeCounter;
     public static void main(String[] args) throws InterruptedException {
-        final ThreadSafeArrayList<Integer> arr = new ThreadSafeArrayList<>();
-        arr.set(1);
+        //System.out.println(writeCounter);
+        final ThreadSafeArrayList<Integer> array = new ThreadSafeArrayList<>();
+        writeCounter += array.set(0);
+        //System.out.println(writeCounter);
         new Thread(new Runnable() {
             @Override
             public void run() {
                 try {
-                    arr.get(0);
+                    array.get(0, readCounter);
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
             }
         }).start();
 
-        new Thread(new Runnable() {
+        Thread t1 = new Thread(new Runnable() {
             @Override
             public void run() {
                 try {
-                    arr.set(2);
+                    writeCounter += array.set(2);
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
             }
-        }).start();
-
-        arr.set(3);
-        arr.get(0);
-
+        });
+        t1.start();
+        t1.join();
+        //System.out.println(writeCounter);
+        writeCounter += array.set(3);
+        array.get(0, readCounter);
+        //System.out.println(writeCounter);
     }
 }

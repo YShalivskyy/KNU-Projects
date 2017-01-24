@@ -143,7 +143,7 @@ public class PriorityQueue {
                 childLock = rightLock;
             }
             // If child has higher priority than parent then swap
-            // If not, stop
+            // If not, terminateThreads
             if (items[child].priority.getKey().compareTo(items[i].priority.getKey()) > 0) {
                 swap_items(child, i);
                 childLock.unlock();
@@ -158,14 +158,14 @@ public class PriorityQueue {
     }
 
 
-    /*
-     * !!! Attention !!!
-     * use it ONLY after ALL changes
-     * in all threads are complete.
-     * This method is only for demonstrating
-     * final result and shouldn't be a part
-     * of this class at all
-     */
+
+//     !!! Attention !!!
+//     use it ONLY after ALL changes
+//     in all threads are complete.
+//     This method is only for demonstrating
+//     final result and shouldn't be a part
+//     of this class at all
+
     @Override
     public String toString() {
         String res = "";

@@ -1,15 +1,14 @@
 package com.ys.tasks.CyclicBarrier17;
 
 
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+
 class CyclicBarrier {
     private final int threadAmount;
     private Runnable barrierAction;
     private int arrived;
-
-    CyclicBarrier(int threadAmount) {
-        this.threadAmount = threadAmount;
-        this.arrived = 0;
-    }
 
     CyclicBarrier(int threadAmount, Runnable barrierAction) {
         this.threadAmount = threadAmount;
@@ -31,6 +30,13 @@ class CyclicBarrier {
 }
 
 public class CyclicBarrierHandler {
+    public static List<Integer> list;
+    private static int iterations;
+
+    CyclicBarrierHandler(int iterations){
+        list = Collections.synchronizedList(new ArrayList<Integer>());
+        this.iterations = iterations;
+    }
 
     public static Runnable task(final int value, final CyclicBarrier barrier){
         return new Runnable() {
@@ -47,9 +53,12 @@ public class CyclicBarrierHandler {
             public void run() {
                 try {
                     int count = value;
-                    for (int i = 1; i < 60; i++) {
+                    for (int i = 0; i < iterations; i++) {
                         count++;
-                        System.out.println(Thread.currentThread().getName() + " calulated value: " + fib(count));
+                        int f = fib(count);
+                        System.out.println(Thread.currentThread().getName() + " calulated value: " + f);
+                        list.add(f);
+                        //System.out.println("Que: " + queue.take());
                         barrier.waitAllThreads();
                     }
                 } catch (InterruptedException e) {
@@ -68,15 +77,24 @@ public class CyclicBarrierHandler {
         };
     }
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
+        CyclicBarrierHandler handler = new CyclicBarrierHandler(25);
         Runnable action = barrierAction();
         CyclicBarrier barrier = new CyclicBarrier(3, action);
-        Runnable task1 = task(5, barrier);
-        Runnable task2 = task(7, barrier);
-        Runnable task3 = task(3, barrier);
+        Runnable task1 = task(10, barrier);
+        Runnable task2 = task(14, barrier);
+        Runnable task3 = task(12, barrier);
 
-        new Thread(task1, "FirstThread").start();
-        new Thread(task2, "SecondThread").start();
-        new Thread(task3, "ThirdThread3").start();
+        Thread thread1 = new Thread(task1, "FirstThread");
+        Thread thread2 = new Thread(task2, "SecondThread");
+        Thread thread3 = new Thread(task3, "ThirdThread3");
+
+        thread1.start();
+        thread2.start();
+        thread3.start();
+
+        thread1.join();
+        thread2.join();
+        thread3.join();
     }
 }
