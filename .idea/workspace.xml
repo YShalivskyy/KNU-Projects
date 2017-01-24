@@ -1,64 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9ad4e281-1d6c-4e33-8428-209c71ef0eda" name="Default" comment="Added completed tasks">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/com/ys/tasks/Applet7/Animator.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/com/ys/tasks/Applet7/Impact.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/com/ys/tasks/PoolCallable19/ThreadPool$Pair.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/com/ys/tasks/PriorityQueue20/Main$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/com/ys/tasks/PriorityQueue20/Main$2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/com/ys/tasks/PriorityQueue20/Main$3.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/com/ys/tasks/PriorityQueue20/Main.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/com/ys/tasks/Progon5/Left.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/com/ys/tasks/Progon5/LeftBack.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/com/ys/tasks/Progon5/Main.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/com/ys/tasks/Progon5/Right.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/com/ys/tasks/Progon5/RightBack.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/com/ys/tasks/Queue14/Queue$Node.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/com/ys/tasks/Queue14/Queue.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/com/ys/tasks/Queue14/QueueHandler$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/com/ys/tasks/Queue14/QueueHandler$2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/com/ys/tasks/Queue14/QueueHandler$3.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/com/ys/tasks/Queue14/QueueHandler$4.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/com/ys/tasks/Queue14/QueueHandler.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/ys/tasks/Applet7/Animator.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/ys/tasks/Applet7/Impact.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/ys/tasks/PriorityQueue20/QueueHandler.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/ys/tasks/Queue14/Queue.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/ys/tasks/Queue14/QueueHandler.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/com/ys/tasks/Applet7/Ball.class" afterPath="$PROJECT_DIR$/build/classes/main/com/ys/tasks/Applet7/Ball.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/com/ys/tasks/Applet7/MainWindow.class" afterPath="$PROJECT_DIR$/build/classes/main/com/ys/tasks/Applet7/MainWindow.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/com/ys/tasks/CyclicBarrier17/CyclicBarrier.class" afterPath="$PROJECT_DIR$/build/classes/main/com/ys/tasks/CyclicBarrier17/CyclicBarrier.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/com/ys/tasks/CyclicBarrier17/CyclicBarrierHandler$1.class" afterPath="$PROJECT_DIR$/build/classes/main/com/ys/tasks/CyclicBarrier17/CyclicBarrierHandler$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/com/ys/tasks/CyclicBarrier17/CyclicBarrierHandler$2.class" afterPath="$PROJECT_DIR$/build/classes/main/com/ys/tasks/CyclicBarrier17/CyclicBarrierHandler$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/com/ys/tasks/CyclicBarrier17/CyclicBarrierHandler.class" afterPath="$PROJECT_DIR$/build/classes/main/com/ys/tasks/CyclicBarrier17/CyclicBarrierHandler.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/com/ys/tasks/PoolCallable19/Task.class" afterPath="$PROJECT_DIR$/build/classes/main/com/ys/tasks/PoolCallable19/Task.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/com/ys/tasks/PoolCallable19/ThreadPool$Executor.class" afterPath="$PROJECT_DIR$/build/classes/main/com/ys/tasks/PoolCallable19/ThreadPool$Executor.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/com/ys/tasks/PoolCallable19/ThreadPool$Result.class" afterPath="$PROJECT_DIR$/build/classes/main/com/ys/tasks/PoolCallable19/ThreadPool$Result.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/com/ys/tasks/PoolCallable19/ThreadPool.class" afterPath="$PROJECT_DIR$/build/classes/main/com/ys/tasks/PoolCallable19/ThreadPool.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/com/ys/tasks/PoolCallable19/ThreadPoolHandler$1.class" afterPath="$PROJECT_DIR$/build/classes/main/com/ys/tasks/PoolCallable19/ThreadPoolHandler$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/com/ys/tasks/PoolCallable19/ThreadPoolHandler.class" afterPath="$PROJECT_DIR$/build/classes/main/com/ys/tasks/PoolCallable19/ThreadPoolHandler.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/com/ys/tasks/PriorityQueue20/PriorityQueue$Item.class" afterPath="$PROJECT_DIR$/build/classes/main/com/ys/tasks/PriorityQueue20/PriorityQueue$Item.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/com/ys/tasks/PriorityQueue20/PriorityQueue.class" afterPath="$PROJECT_DIR$/build/classes/main/com/ys/tasks/PriorityQueue20/PriorityQueue.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/com/ys/tasks/PriorityQueue20/ThreadId$1.class" afterPath="$PROJECT_DIR$/build/classes/main/com/ys/tasks/PriorityQueue20/ThreadId$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/com/ys/tasks/PriorityQueue20/ThreadId.class" afterPath="$PROJECT_DIR$/build/classes/main/com/ys/tasks/PriorityQueue20/ThreadId.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/com/ys/tasks/ReadWriteLock10/ReadWriteLockHandler$1.class" afterPath="$PROJECT_DIR$/build/classes/main/com/ys/tasks/ReadWriteLock10/ReadWriteLockHandler$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/com/ys/tasks/ReadWriteLock10/ReadWriteLockHandler$2.class" afterPath="$PROJECT_DIR$/build/classes/main/com/ys/tasks/ReadWriteLock10/ReadWriteLockHandler$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/com/ys/tasks/ReadWriteLock10/ReadWriteLockHandler.class" afterPath="$PROJECT_DIR$/build/classes/main/com/ys/tasks/ReadWriteLock10/ReadWriteLockHandler.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/com/ys/tasks/ReadWriteLock10/ReadersWriterLock.class" afterPath="$PROJECT_DIR$/build/classes/main/com/ys/tasks/ReadWriteLock10/ReadersWriterLock.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/com/ys/tasks/ReadWriteLock10/ThreadSafeArrayList.class" afterPath="$PROJECT_DIR$/build/classes/main/com/ys/tasks/ReadWriteLock10/ThreadSafeArrayList.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules/ProgrammingTasks2016_main.iml" afterPath="$PROJECT_DIR$/.idea/modules/ProgrammingTasks2016_main.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules/ProgrammingTasks2016_test.iml" afterPath="$PROJECT_DIR$/.idea/modules/ProgrammingTasks2016_test.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+    <list default="true" id="9ad4e281-1d6c-4e33-8428-209c71ef0eda" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ys/tasks/Applet7/Ball.java" afterPath="$PROJECT_DIR$/src/main/java/com/ys/tasks/Applet7/Ball.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ys/tasks/Applet7/MainWindow.java" afterPath="$PROJECT_DIR$/src/main/java/com/ys/tasks/Applet7/MainWindow.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ys/tasks/CyclicBarrier17/CyclicBarrierHandler.java" afterPath="$PROJECT_DIR$/src/main/java/com/ys/tasks/CyclicBarrier17/CyclicBarrierHandler.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ys/tasks/PoolCallable19/ThreadPoolHandler.java" afterPath="$PROJECT_DIR$/src/main/java/com/ys/tasks/PoolCallable19/ThreadPoolHandler.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ys/tasks/PriorityQueue20/PriorityQueue.java" afterPath="$PROJECT_DIR$/src/main/java/com/ys/tasks/PriorityQueue20/PriorityQueue.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ys/tasks/ReadWriteLock10/ReadWriteLockHandler.java" afterPath="$PROJECT_DIR$/src/main/java/com/ys/tasks/ReadWriteLock10/ReadWriteLockHandler.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/ys/tasks/TridiagonalMatrix5/Main.java" afterPath="$PROJECT_DIR$/src/main/java/com/ys/tasks/TridiagonalMatrix5/MatrixHandler.java" />
     </list>
     <ignored path="ProgrammingTasks2016.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -112,7 +57,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/ys/tasks/DisruptorPattern15/Main.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="102">
@@ -155,7 +100,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DISettings.txt" pinned="false" current-in-tab="true">
+      <file leaf-file-name="DISettings.txt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/DISettings.txt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
@@ -1333,8 +1278,16 @@
       <workItem from="1482397658829" duration="3213000" />
       <workItem from="1482688858475" duration="1061000" />
       <workItem from="1482736453103" duration="33002000" />
-      <workItem from="1485290800822" duration="1226000" />
+      <workItem from="1485290800822" duration="1337000" />
     </task>
+    <task id="LOCAL-00001" summary="Added completed tasks">
+      <created>1485292057901</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1485292057901</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1370,11 +1323,11 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="112156000" />
+    <option name="totallyTimeSpent" value="112267000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="55" y="3" width="1318" height="772" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1388,7 +1341,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.8555195" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2344992" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2344992" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1750,14 +1703,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ys/tasks/DisruptorPattern15/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ys/tasks/DisruptorPattern15/RingBufferBusy.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -1819,6 +1764,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="29" selection-start-line="0" selection-start-column="29" selection-end-line="0" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ys/tasks/DisruptorPattern15/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
           <folding />
         </state>
       </provider>
